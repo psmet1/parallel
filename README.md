@@ -1,4 +1,8 @@
-# parallel
+# parallel 
+
+![Build Status](https://github.com/psmet1/parallel/actions/workflows/build.yml/badge.svg)
+![Latest Release](https://img.shields.io/github/v/release/psmet1/parallel?include_prereleases)
+![GitHub License](https://img.shields.io/github/license/psmet1/parallel)
 
 parllel is a lightweight, parallel command execution tool written in C++. It reads commands from a text file (one command per line), executes them concurrently up to a user-defined limit, and writes each command's output to a specified log file. As commands are processed, ConcurCmd prints the progress (number of jobs processed) to the console.
 
