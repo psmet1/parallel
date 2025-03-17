@@ -14,6 +14,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Setup MSVC Compiler
+        uses: ilammy/msvc-dev-cmd@v1
+
       - name: Compile with cl
         run: |
           cl /EHsc /O2 parallel.cpp
