@@ -68,7 +68,7 @@ void worker_thread(queue<string>& tasks,
         int count = ++jobs_processed;
         {
             lock_guard<mutex> console_lock(console_mutex);
-            cout << "Processed " << count << " jobs" << endl;
+            cout << "\rProcessed jobs: " << count << flush;
         }
     }
 }
